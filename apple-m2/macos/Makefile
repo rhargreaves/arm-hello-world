@@ -8,3 +8,7 @@ apple: apple.o
 
 apple.o: apple.s
 	as -arch arm64 -o apple.o apple.s
+
+clean:
+	rm apple apple.o
+.PHONY: clean
